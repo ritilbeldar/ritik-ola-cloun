@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Lora&family=Montserrat:wght@500&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Lora&family=Montserrat:wght@500&family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&family=Montserrat:wght@500&family=Slabo+27px&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    height: 4vmax;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+nav li{
+    list-style: none;
+}
+.nav-left{
+    width: 35vmax;
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+}
+#nav-left-li{
+    width: 17vmax;
+    display: flex;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 12.2px;
+    font-weight: 900;
+    
+   
+}
+.nav-right{
+    margin-right: 6%;
+    display: flex;
+    width: 21vmax;
+    justify-content: space-around;
+}
+.nav-right a{
+    padding: 14px 12px;
+    background-color: rgba(255, 255, 255, 0.215);
+    
+}
+#color-white a{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+.nav-right i{
+    color: white;
+    font-size: 20px;
+}
+.bg-img{
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+    height: 22vmax;
+    background: url(/bg\ img.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img h1{
+    width: 22vmax;
+    color:  white;
+    font-size: 42px;
+    font-weight: 600;
+    margin-left: 15.5%;
+    margin-top: 6%;
+}
+.search{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    position: absolute;
+    top: 36%;
+   
+}
+.search ul{
+    width: 21vmax;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.991);
+    padding: 10px 40px 1px 25px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.search li{
+    padding: 5px 17px 12px 17px;
+}
+.search li:first-child{
+    border-bottom: 2px solid black;
+}
+.search-locetion{
+    width: 62vmax;
+    background-color: rgb(224, 225, 231);
+    display: flex    ;
+    align-items: center;
+    padding: 24px 24px 24px 16px;
+    z-index: +5;
+}
+.search-locetion input{
+    padding: 17px 62px 17px 45px;
+    font-weight: 600;
+    margin-left: 1%;
+    border: .2px solid rgba(0, 0, 0, 0.281);
+    
+}
+#child2{
+    margin-left: 3%;
+}
+.search-locetion ::placeholder{
+    color: black;
+}
+.search-locetion button{
+    padding: 17px 25px 17px 18px;
+    margin-left: 3% ;
+    background: url(/button-bgg.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: rgb(0, 0, 0);
+    background-size: 110%;
+    position: relative;
+    box-shadow: 5px 5px 1px rgb(199, 199, 122)  ;
+    cursor: pointer;
+}
+#bg-color1{
+    width: 16.7vmax;
+    height: 3.4vmax;
+    background-color: rgba(0, 0, 0, 0.865);
+    z-index: 1;
+    position: absolute; 
+   top: -1px;
+   left: -2px;
+}
+#button-text{
+    position: absolute;
+    left: 70%;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+#button-text span{
+    color: rgb(207, 207, 102);
+}
+#s1-img{
+    width: 62vmax;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+.global{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+}
+.global h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+    
+}
+.global2{
+    display: flex;
+    margin-top: 5%;
+}
+.cities,.year,.kiometer{
+    width: 25vmax;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cities img,.year img,.kiometer img{
+    height: 140px;
+}
+.cities h2,.year h2,.kiometer h2{
+    font-size: 35px;
+    margin-top: 4%;
+}
+.cities h3,.year h3,.kiometer h3{
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.767);
+    margin-top: 4%;
+}
+.cities p,.year p,.kiometer p{
+    width: 15vmax;
+    margin-top: 3%;
+    line-height: 22px;
+    font-size: 16px;
+}
+.olas1{
+    clip-path: polygon(0 5%, 100% 0, 100% 96%, 0% 100%);
+    height: 75vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    background-color: black;
+}
+.olas1 h1{
+    font-size: 45px;
+    margin-top: 10%;
+    margin-left: -17%;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+}
+#olass1{
+    height: 500px;
+    width: 950px;
+    margin-top: 3%;
+}
+.abouts1{
+    width: 80vmax;
+    display: flex;
+    margin-top: 1%;
+}
+.abouts1 p{
+    color: rgba(255, 255, 255, 0.564);
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 11.2%;
+
+}
+.abouts1 span{
+    font-weight: 600;
+    color:  rgba(207, 207, 102, 0.571);
+    margin-top: 10%;
+    cursor: pointer;
+}
+.olas1pro{
+    width: 30vmax;
+    display: flex;
+    margin-left: 7.5%;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 150%;
+}
+.olas1pro p{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: -1%;
+    color: rgba(255, 255, 255, 0.308);
+   
+}
+.olas1pro h3{
+    font-size: 25px;
+    color: white;
+}
+.range,.speed,.to40{
+    border: 0.001px solid white;
+    padding: 10px 20px 40px 20px;
+    background-color: rgba(81, 21, 21, 0.372);
+}
+.olas1pro sub{
+    font-size: 15px;
+}
+#books1{
+    height: 95px;
+    margin-top: 3%;
+    cursor: pointer;
+}
+.tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+.tech h1{
+    font-size: 40px;
+    margin-top: 5%;
+    margin-left: -28.5%;
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+}
+.tech img{
+    height: 400px;
+}
+.tech2{
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+}
+.Futurefactory{
+    width: 66vmax;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+   background-color: #f0f4f4;
+}
+.future{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.future p{
+    margin-top: 5%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.454);
+}
+.battery{
+    width: 66vmax;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    background-color: #f0f4f4;
+}
+.battery img{
+    margin-left: 5%;
+}
+.bettery-center{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.bettery-center p{
+    width: 17vmax;
+    margin-top: 5%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.454);
+}
+.indiasfirst{
+    width: 66vmax;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+   background-color: #f0f4f4;
+}
+.cell{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.cell p{
+    margin-top: 5%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.454);
+}
+.car{
+    clip-path: polygon(0 5%, 100% 0, 100% 96%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    background-color: black;
+    height: 60vmax;
+}
+.car h1{
+    margin-left: -33%;
+    font-size: 45px;
+     text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+    margin-top: 8%;
+    color: white;
+}
+.car video{
+    height: 575px;
+    margin-top: 2%;
+}
+.ola-ride{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+.ola-ride h1{
+    font-size: 45px;
+    margin-left: -21%;
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+    margin-top: 5%;
+}
+.ola-ride1{
+    width: 62.5vmax;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.ola-ride1 h3{
+    font-size: 20px;
+    margin-top: 10%;
+}
+.ola-ride1 p{
+    margin-top: 8%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.454);
+}
+.ola-ride1 span{
+    color: rgba(0, 0, 0, 0.735);
+}
+.innovations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+.innovations-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    position: relative;
+}
+.innovations h1{
+    font-size: 45px;
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+}
+.innovations h3{
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.innovations p{
+    width: 30vmax;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.454);
+        margin-top: 4%;
+        margin-left: 10%;
+}
+.innovations video{
+    height: 650px;
+}
+.innovations hr{
+    height: 1px;
+    background-color: green;
+    width: 7vmax;
+    rotate: 90deg;
+    position: absolute;
+    top: 53%;
+    right: 87%;
+}
+#hr2{
+    height: 2.5px;
+    width: 5.5vmax;
+    top: 89%;
+    right: 89.5%;
+}
+.smarter-way-to-pay{
+    clip-path: polygon(0 5%, 100% 0, 100% 96%, 0% 100%);
+    height: 65vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    background-color: rgba(255, 64, 0, 0.137);
+}
+.smarter-way-to-pay h1{
+    font-size: 45px;
+    margin-top: 7%;
+    margin-left: -43.5%;  
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+}
+.postpaid{
+    display: flex;
+    margin-top: 3%;
+}
+.postpaid-left{
+    width: 30vmax;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+}
+.postpaid-left h4{
+    font-size: 20px;
+    font-weight: 300;
+}
+.postpaid-left h3{
+    font-size: 22px;
+    margin-top: 5%;
+}
+.postpaid-left button{
+    padding: 6px 5px;
+    font-weight: 600;
+    background-color: rgba(77, 128, 0, 0.336);
+    color: rgba(255, 115, 0, 0.904);
+    border: none;
+}
+.pospaid-left-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30%;
+}
+.pospaid-left-img p{
+    margin-top: 25%;
+}
+.postpaid-img img{
+    height: 350px;
+}
+.insurance{
+    width: 70vmax;
+    display: flex;
+    margin-top: 7%;
+    margin-left: 1.5%;
+}
+.insurance-right h3{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 2%;
+}
+.insurance-right h2{
+    font-size: 21px;
+    margin-top: 5%;
+}
+.insurance-right a{
+    text-decoration: none;
+    font-size: 20px;
+    color:  rgba(207, 132, 102, 0.842);
+    font-weight: 600;
+}
+.insurance-left{
+    width: 42vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8%;
+}
+.insurance-left img{
+    height: 170px;
+}
+.Making-a-difference{
+    height: 60vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.Making-a-difference a{
+    text-decoration: none;
+    font-size: 20px;
+    color:  rgba(207, 167, 102, 0.982);
+    font-weight: 600;
+    margin-top: 2%;
+    margin-left: -51.7%;
+}
+.Making-a-difference h1{
+    font-size: 45px;
+    margin-left: -43%;
+    margin-top: 5%;
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+}
+.Making-a-difference-uper{
+    width: 60vmax;
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-between;
+    margin-left: -9%;
+}
+.Making-a-difference-uper p{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.454);
+}
+.Making-a-difference-uper span{
+    font-size: 20px;
+    color: black;
+}
+.Making-a-difference-bottm{
+    display: flex;
+    margin-top: 2%;
+    margin-left: -3%;
+}
+.Making-a-difference-bottm img{
+    height: 250px;
+}
+#one{
+    margin-top: 4.5%;
+}
+#zero{
+    margin-left: 2%;
+    
+}
+#zero img{
+    height: 525px;
+}
+.Recent-from-our-blogs{
+    clip-path: polygon(0 5%, 100% 0, 100% 96%, 0% 100%);
+    height: 42vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(206, 141, 141, 0.203);
+    margin-top: 5%;
+}
+.Recent-from-our-blogs h1{
+    font-size: 45px;
+    margin-left: -39.5%;
+    margin-top: 5%;
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+}
+
+.Recent-from-our-blogs2{
+    margin-top: 4%;
+    width: 68.5vmax;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Recent-from-our-blogs2 h3{
+    margin-top: 4%;
+    font-size: 20px;
+}
+.Recent-from-our-blogs2 img{
+    height: 250px;
+}
+.Recent-from-our-blogs2 a{
+    text-decoration: none;
+    font-size: 15px;
+    color:  rgba(207, 167, 102, 0.982);
+    font-weight: 600;
+}
+#two{
+    height: 15px;
+}
+.app-download{
+    height: 38vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+.app-download h1{
+    font-size: 42px;
+    margin-top: 4%;
+    margin-left: -34.5%;
+    text-shadow: 2px 2px 1px rgba(199, 199, 122, 0.655);
+}
+.app-download2{
+    width: 63vmax;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.coman{
+    padding: 35px 35px 35px 35px;
+}
+.coman h3{
+    margin-top: 25%;
+    font-size: 20px;
+}
+.coman p{
+    font-size: 13px;
+    margin-top: 5%;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.454);
+}
+.ola-ev{
+    background-color: #f2f4f6;
+}
+.app-ola{
+    background-color: rgba(240, 142, 115, 0.274);
+}
+.ola-diver{
+    background-color: rgba(240, 142, 115, 0.274);
+}
+#app-dow-arow{
+    height: 17px;
+}
+.last-ola{
+    height: 16vmax;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgba(206, 141, 141, 0.203);
+}
+
+.last-ola-list{
+    width: 25vmax;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5%;
+    margin-right: 5%;  
+}
+.last-ola-list li{
+    list-style: none;
+    margin-top: 8%;
+   
+}
+.last-ola-list a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.last-ola-logo{
+    margin-right: 6%;
+    margin-top: 4%;
+}
+.last-ola-email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.last-ola-email input{
+    margin-top: 5%;
+    width: 18vmax;
+    height: 3.5vmax;
+    padding: 0 0 0 5%;
+    font-size: 17px;
+    border: .5px solid rgba(0, 0, 0, 0.176);
+}
+.last-ola-email button{
+    margin-top: 5%;
+    width: 18vmax;
+    height: 3.5vmax;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    box-shadow: 3px 3px 1px rgb(199, 199, 122) ;
+}
+.last-ola-email span{
+    color: #32c86e
+}
+.last-ola-email img{
+    margin-top: %;
+}
+
+.last-ola-copy{
+    height: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(206, 141, 141, 0.203);
+}
+.last-ola-copy h5{
+    margin-right: 52%;
+}
+.last-ola-copy span{
+    font-size: 20px;
+    color: #10f36b
+}
